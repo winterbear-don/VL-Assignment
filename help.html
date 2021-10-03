@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educordis:Help</title>
+
+    <link rel="stylesheet" href="styles/help.css">
+</head>
+<body>
+    <!-- LeftPane: NavBar and Main Section choosing area -->
+    <div id="leftpane" class="full">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="mainPage.html">Main</a>
+            <a href="aboutUs.htm">About Us</a>
+            <a href="loginPage.html">Log In</a>
+        </nav>
+        <hr>
+        <br>
+        <img class="thumbnail" src="images/screenshots/logIn.png" alt="Image of our Main Page" usemap="#logIn"> 
+        <img class="thumbnail" src="images/screenshots/main.png" alt="Image of our Main Page" usemap="#main"> 
+        <img class="thumbnail" src="images/screenshots/aboutUs.png" alt="Image of our Main Page" usemap="#about"> 
+        <img class="thumbnail" src="images/screenshots/error.png" alt="Image of our Main Page" usemap="#error">
+    </div>
+    <div id="rightpane" class="full">
+        <div class="container text-white">
+            <div id="dialog">
+                <h2>Click any Image to view Details</h2>
+                <p>This is the help page. You can click any of the images in the image tab in certain areas to find out what those areas do and how to use them on their respective pages</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h3 id="head"></h3>
+            <pre><p id="text"></p></pre>
+            <br>
+            <h3 id="subhead"></h3>
+            <p id="subtext"></p>
+        </div>
+    </div>
+    <!-- Image Maps -->
+    <map name="logIn">
+        <area shape="rect" coords="20, 35, 320, 125" onclick="LogInMain()">
+        <area shape="rect" coords="20, 150, 320, 240" onclick="LogInVideo()">
+    </map>
+    <map name="main">
+        <area shape="rect" coords="0, 0, 69, 166" onclick="MainTabs()">
+        <area shape="rect" coords="85, 0, 256, 166" onclick="MainGroups()">
+        <area shape="rect" coords="270, 0, 339, 167" onclick="MainDetails()">
+    </map>
+    <map name="error"><area shape="rect" coords="0, 0, 340, 167" onclick="error()"></map>
+    <map name="about">
+        <area shape="rect" coords="0, 0, 290, 130" onclick="AboutMain()">
+        <area shape="rect" coords="0, 140, 300, 167" onclick="AboutContact()">
+        <area shape="rect" coords="325, 0, 340, 167" onclick="AboutSocial()">
+    </map>
+    <!-- script -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/help.js"></script>
+</body>
+</html>

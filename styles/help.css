@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    /* overflow: hidden; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.full {
+    background-color: palegreen;
+    display: inline-block;
+    min-height: 100vh;
+}
+div#leftpane {
+    text-align: center;
+    background-color: #7B1FA2;
+    width: 400px;
+}
+div#rightpane {
+    background-color: black;
+    width: 80%;
+}
+/* ------------------------------------------------ */
+
+/* Nav Bar */
+nav {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+nav a {
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: #E1BEE7;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #7B1FA2;
+    background-color: #E1BEE7;
+}
+/* ------------------------------------------------ */
+
+/* Left Panel Images */
+.thumbnail {
+    width: 340px;
+    margin: 10px;
+}
+/* ------------------------------------------------ */
+
+/* Right Panel Images */
+.container {padding: 0% 5%;}
+#map {width: 1380px;}
+.text-white {color: white;}

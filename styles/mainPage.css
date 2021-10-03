@@ -1,0 +1,215 @@
+/* Page */
+/* Set body margin to zero so that our sections stick to the edges of the window */
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Made our sections inline block so that they can be set side by side */
+section {
+    display: inline-block;
+    background-color: white;
+    height: 98.9vh;
+    border: 5px solid #7B1FA2;
+    border-radius: 0px;
+}
+/* used absolute positioning to stick left and right sidebars to the edges of window */
+section.sideBar {
+    width: 20%;
+    position: absolute;
+}
+/* ------------------------------------------------------------------------- */
+
+
+/* Left Section */
+section#leftSection {
+    left: 0px;
+    border-radius: 0px 20px 20px 0px;
+}
+.tagQuiz {background-color: #7C4DFF;}
+.tagNotice {background-color: #212121;}
+.tagDisable {background-color: grey;}
+.tagUrgent {background-color: #D32F2F;}
+.tag {
+    padding-left: 20px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin: 20px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
+    height: 48px;
+}
+/* ------------------------------------------------------------------------- */
+
+
+/* Main Section */
+/* main section is a little wider than the side bars */
+section#main {
+    background-color: #7B1FA2;
+    position: absolute;
+    left: 23%;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#main2 {
+    padding: 3% 6%;
+}
+/* Navigation Bar */
+nav {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.nav {
+    color: #E1BEE7;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.nav:hover {
+    background-color: #E1BEE7;
+    color: #7B1FA2;
+}
+#logOut {
+    position: absolute;
+    right: 6%;
+    margin-right: 0px;
+}
+/* Search Bar */
+#search {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    height: 30px;
+    width: 97%;
+    background-color: white;
+}
+#searchBar {
+    height: 25px;
+    position: absolute;
+    margin-left: 10px;
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #7B1FA2;
+}
+/* table */
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #212121;
+    border-radius: 10px;
+    border: 4px solid white;
+    height: 190px;
+}
+#svvproject {background-color: #D32F2F;}
+#weproject {background-color: #303F9F;}
+#ooseass {background-color: #0288D1;}
+#gdd {background-color: #FF5722;}
+#edcrddsgn {background-color: #E1BEE7;}
+#rsc {background-color: #455A64;}
+#unity {background-color: #212121;}
+#brhelp {background-color: #388E3C;}
+#gdsgn {background-color: #5D4037;}
+/* ------------------------------------------------------------------------- */
+
+
+/* Right Section */
+section#rightSection {
+    right: 0px;
+    border-color: #E91E63;
+    border-radius: 20px 0px 0px 20px;
+}
+.groupTitle {margin-top: 120px;}
+.groupDetails {
+    background-color:  #212121;
+    margin: 150px 20px 150px 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+}
+.groupButton {background-color: #1976D2;}
+#groupTitle svg {
+    position: absolute;
+    top: 44%;
+    left: 40%;
+}
+
+/* MEDIA QUERIES */
+/* There are 2 media queries for laptops with 768p and 720p screens */
+/* Laptop Media Query 1 */
+@media screen and (max-device-width: 1370px) {
+    /* Page */
+    section {height: 98.5vh;}
+    /* ------------------------------------------------------------------------- */
+
+    /* Left Section */
+    .tag {
+        padding-left: 15px;
+        padding-bottom: 4px;
+        font-size: 18px;
+        margin: 12px 15px 12px 0px;
+        height: 34px;
+    }
+    /* ------------------------------------------------------------------------- */
+
+    /* Main Section */
+    /* Navigation Bar */
+    nav {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    /* Search Bar */
+    #searchBar {
+        width: 78%;
+        font-size: 18px;
+    }
+    /* table */
+    td {
+        font-size: 18px;
+        height: 90px;
+    }
+    /* ------------------------------------------------------------------------- */
+
+    /* Right Section */
+    .groupTitle {margin-top: 75px;}
+    .groupDetails {
+        margin: 90px 15px 90px 0px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        height: fit-content;
+        font-size: 16px;
+    }
+    #groupTitle svg {left: 34%;}
+}
+
+/* Laptop Media Query 1 */
+@media screen and (max-device-width: 1300px) {
+    /* Page */
+    section {height: 98.3%;}
+    /* ------------------------------------------------------------------------- */
+
+    /* Left Section */
+    .tag {height: 31px;}
+    /* ------------------------------------------------------------------------- */
+    
+    /* Main Section */
+    /* table */
+    td {height: 80px;}
+    /* ------------------------------------------------------------------------- */
+
+    /* Right Section */
+    .groupDetails {
+        margin: 80px 15px 80px 0px;
+        height: fit-content;
+    }
+}
